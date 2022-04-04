@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #1f1e1e !important;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 6vh;
+  position: relative;
+  top: 1rem;
+  z-index: 3;
+}
+
+nav div {
+  font-size: 4rem;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 6rem;
+  font-family: "FontAwesome";
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+nav div:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+nav div:hover:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav div:hover:active {
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+nav ul li {
+  padding: 1rem;
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: red;
+}
+
+nav ul li a:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover:active {
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav button {
+  width: 12rem;
+  height: 4rem;
+  border: 1px solid red;
+  border-radius: 15px;
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav button:active {
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  background-image: url("../img/best-movies-1614634680.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: 20rem;
+  z-index: 3;
+}
+
+.header-container header h1 {
+  font-size: 3rem;
+  text-shadow: #474747 3px 5px 2px, 0px 0px 0px rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.header-container header p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.header-container header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .header-container header form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.header-container header form input:nth-of-type(1) {
+  margin-top: 2rem;
+  height: 6rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-container header form input:nth-of-type(2) {
+  margin-top: 2rem;
+  height: 5rem;
+  width: 15rem;
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  border: 1px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container header form input:nth-of-type(2):hover {
+  opacity: 0.8;
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container header form input:nth-of-type(2):active {
+  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+  .header-container header form input:nth-of-type(2) {
+    border-radius: 0;
+    height: 6rem;
+  }
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+section {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: black;
+  color: white;
+}
+
+section .cat1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100% !important;
+}
+
+@media (max-width: 800px) {
+  section .cat1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section .cat1 article {
+  width: 50% !important;
+}
+
+@media (max-width: 800px) {
+  section .cat1 article {
+    width: 100% !important;
+  }
+}
+
+section .cat1 article h2 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: -4px -4px 8px rgba(238, 231, 231, 0.5), 8px 8px 5px rgba(172, 5, 5, 0.1);
+}
+
+@media (min-width: 1024px) {
+  section .cat1 article h2 {
+    font-size: 6rem;
+  }
+}
+
+section .cat1 article p {
+  font-size: 2vw;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+section .cat1 #carouselExampleFade {
+  width: 50% !important;
+}
+
+@media (max-width: 800px) {
+  section .cat1 #carouselExampleFade {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
