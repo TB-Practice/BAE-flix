@@ -35,3 +35,14 @@
         @content;
     }
 }
+
+@mixin grow {
+    &:hover {
+        transform: scale(1.1);
+        z-index: 5;
+        border: 3px solid white;
+        p {
+            width: 90%;
+        }
+    }
+}

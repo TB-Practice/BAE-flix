@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -16,101 +15,101 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 6vh;
   position: relative;
   top: 1rem;
   z-index: 3;
 }
-
-nav div {
-  font-size: 4rem;
+nav .logo {
+  font-size: 4vw;
   color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 6rem;
   font-family: "FontAwesome";
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
-
-nav div:hover {
-  cursor: pointer;
-  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+@media (min-width: 1024px) {
+  nav .logo {
+    font-size: 7rem;
+  }
 }
-
-nav div:hover:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav div:hover:active {
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-}
-
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
   color: white;
+  transition: all 1s;
 }
-
+@media (min-width: 1024px) {
+  nav ul {
+    font-size: 5rem;
+  }
+}
 nav ul li {
   padding: 1rem;
   list-style-type: none;
   margin-left: 1rem;
 }
-
 nav ul li a {
   text-decoration: none;
   color: red;
 }
-
 nav ul li a:hover {
   background-color: red;
   color: white;
   border: 1px solid red;
   border-radius: 15px;
   cursor: pointer;
-  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
 }
-
 nav ul li a:hover:hover {
   opacity: 0.8;
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 nav ul li a:hover:active {
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
+nav ul li .dropdown {
+  position: relative;
+  display: inline-block;
+}
+nav ul li .dropdown span {
+  color: red;
+}
+nav ul li .dropdown span:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul li .dropdown span:hover:hover {
+  opacity: 0.8;
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul li .dropdown span:hover:active {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul li .dropdown .dropdown-content {
+  color: white;
+  font-size: 1.7rem;
+  background: transparent;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 12px 16px;
+}
+nav ul li .dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
 nav button {
   width: 12rem;
   height: 4rem;
@@ -122,19 +121,37 @@ nav button {
   position: relative;
   top: 1rem;
   cursor: pointer;
-  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
 }
-
 nav button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+nav button:active {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+nav button a {
+  text-decoration: none;
+  color: white;
 }
 
-nav button:active {
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .header-container {
@@ -144,21 +161,11 @@ nav button:active {
   background-size: cover;
   height: 100vh;
 }
-
 .header-container header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: white;
   width: 60%;
   margin: 0 auto;
@@ -166,52 +173,36 @@ nav button:active {
   top: 20rem;
   z-index: 3;
 }
-
 .header-container header h1 {
   font-size: 3rem;
   text-shadow: #474747 3px 5px 2px, 0px 0px 0px rgba(0, 0, 0, 0);
   text-align: center;
 }
-
 .header-container header p {
   font-size: 2rem;
   margin-top: 2rem;
   text-align: center;
 }
-
 .header-container header form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
-
 @media (min-width: 1024px) {
   .header-container header form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
+    width: 60%;
   }
 }
-
 .header-container header form input:nth-of-type(1) {
   margin-top: 2rem;
   height: 6rem;
   width: 100%;
   padding: 1rem;
+  font-size: 2rem;
 }
-
 .header-container header form input:nth-of-type(2) {
   margin-top: 2rem;
   height: 5rem;
@@ -222,21 +213,15 @@ nav button:active {
   border: 1px solid red;
   border-radius: 15px;
   cursor: pointer;
-  -webkit-box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
 }
-
 .header-container header form input:nth-of-type(2):hover {
   opacity: 0.8;
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 .header-container header form input:nth-of-type(2):active {
-  -webkit-box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 @media (min-width: 1024px) {
   .header-container header form input:nth-of-type(2) {
     border-radius: 0;
@@ -257,62 +242,384 @@ nav button:active {
 
 section {
   width: 100%;
-  margin: 1rem auto;
-  background-color: black;
+  margin: 0.5rem auto;
+  background-color: #1f1e1e;
   color: white;
 }
-
-section .cat1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+section .cat1, section .cat4, section .cat3, section .cat2 {
   display: flex;
   height: 100% !important;
 }
-
 @media (max-width: 800px) {
-  section .cat1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  section .cat1, section .cat4, section .cat3, section .cat2 {
+    flex-direction: column;
   }
 }
-
-section .cat1 article {
+section .cat1 article, section .cat4 article, section .cat3 article, section .cat2 article {
   width: 50% !important;
+  background-color: black;
+  transition: all 1s;
 }
-
+section .cat1 article:hover, section .cat4 article:hover, section .cat3 article:hover, section .cat2 article:hover {
+  transform: scale(1.1);
+  z-index: 5;
+  border: 3px solid white;
+}
+section .cat1 article:hover p, section .cat4 article:hover p, section .cat3 article:hover p, section .cat2 article:hover p {
+  width: 90%;
+}
 @media (max-width: 800px) {
-  section .cat1 article {
+  section .cat1 article, section .cat4 article, section .cat3 article, section .cat2 article {
     width: 100% !important;
   }
 }
-
-section .cat1 article h2 {
+section .cat1 article h2, section .cat4 article h2, section .cat3 article h2, section .cat2 article h2 {
   font-size: 4rem;
   text-align: center;
   text-shadow: -4px -4px 8px rgba(238, 231, 231, 0.5), 8px 8px 5px rgba(172, 5, 5, 0.1);
 }
-
 @media (min-width: 1024px) {
-  section .cat1 article h2 {
+  section .cat1 article h2, section .cat4 article h2, section .cat3 article h2, section .cat2 article h2 {
     font-size: 6rem;
   }
 }
-
-section .cat1 article p {
+section .cat1 article p, section .cat4 article p, section .cat3 article p, section .cat2 article p {
   font-size: 2vw;
   padding: 1rem;
   margin: 0 auto;
 }
-
-section .cat1 #carouselExampleFade {
+section .cat1 .article1:hover, section .cat4 .article1:hover, section .cat3 .article1:hover, section .cat2 .article1:hover {
+  color: red;
+  border: 3px solid red;
+}
+section .cat1 #carouselExampleFade, section .cat4 #carouselExampleFade, section .cat3 #carouselExampleFade, section .cat2 #carouselExampleFade {
   width: 50% !important;
 }
-
 @media (max-width: 800px) {
-  section .cat1 #carouselExampleFade {
+  section .cat1 #carouselExampleFade, section .cat4 #carouselExampleFade, section .cat3 #carouselExampleFade, section .cat2 #carouselExampleFade {
     width: 100% !important;
   }
 }
-/*# sourceMappingURL=main.css.map */
+section .cat2 {
+  margin-top: 0.5rem;
+  flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  section .cat2 {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}
+section .cat2 .article2:hover {
+  color: green;
+  border: 3px solid green;
+}
+section .cat2 #carouselExampleFade2 {
+  width: 50% !important;
+}
+@media (max-width: 800px) {
+  section .cat2 #carouselExampleFade2 {
+    width: 100% !important;
+  }
+}
+section .cat3 {
+  margin-top: 0.5rem;
+}
+@media (max-width: 800px) {
+  section .cat3 {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}
+section .cat3 .article3:hover {
+  color: purple;
+  border: 3px solid purple;
+}
+section .cat3 #carouselExampleFade3 {
+  width: 50% !important;
+}
+@media (max-width: 800px) {
+  section .cat3 #carouselExampleFade3 {
+    width: 100% !important;
+  }
+}
+section .cat4 {
+  margin-top: 0.5rem;
+  flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  section .cat4 {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}
+section .cat4 .article4:hover {
+  color: orange;
+  border: 3px solid orange;
+}
+section .cat4 #carouselExampleFade4 {
+  width: 50% !important;
+}
+@media (max-width: 800px) {
+  section .cat4 #carouselExampleFade4 {
+    width: 100% !important;
+  }
+}
+
+.carousel-inner {
+  transition: all 1s;
+}
+.carousel-inner:hover {
+  transform: scale(1.1);
+  z-index: 5;
+  border: 3px solid white;
+}
+.carousel-inner:hover p {
+  width: 90%;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  color: rgb(201, 192, 192);
+  font-size: 1vw;
+  position: relative;
+  left: 1rem;
+  opacity: 0.5;
+}
+footer div i {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+footer div i:hover {
+  transform: scale(1.8);
+}
+footer button {
+  height: 70%;
+  font-size: 1.2vw;
+  position: relative;
+  right: 1rem;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid red;
+  border-radius: 15px;
+}
+footer button:hover {
+  opacity: 0.8;
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+footer button:active {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+footer button a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-about {
+  height: 91vh;
+  width: 82vw;
+  position: relative;
+  top: 4.5rem;
+  background-color: white;
+  border: 7px solid;
+  border-radius: 15px;
+}
+@media (min-width: 1024px) {
+  .section-about {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.section-about .img-container {
+  height: 60vh;
+}
+@media (min-width: 1024px) {
+  .section-about .img-container {
+    height: 90vh;
+    width: 57vw;
+  }
+}
+.section-about .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.section-about .content-container {
+  height: 30vh;
+  width: 80vw;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .section-about .content-container {
+    width: 25vw;
+    height: 90vh;
+  }
+}
+.section-about .content-container h2 {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .section-about .content-container h2 {
+    font-size: 2.5rem;
+  }
+}
+.section-about .content-container h3 {
+  padding: 2rem;
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .section-about .content-container h3 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+}
+.section-about .content-container p {
+  padding: 2rem;
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .section-about .content-container p {
+    font-size: 2rem;
+    width: 90%;
+  }
+}
+.section-about .content-container button {
+  font-size: 1rem;
+  position: relative;
+  right: 1rem;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid red;
+  border-radius: 15px;
+}
+.section-about .content-container button:hover {
+  opacity: 0.8;
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.section-about .content-container button:active {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  .section-about .content-container button {
+    font-size: 2rem;
+  }
+}
+.section-about .content-container button a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/kino.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 95%;
+  width: 100%;
+  opacity: 1;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+main form h1 {
+  border-bottom: 2px solid green;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 5px;
+  width: 30%;
+  position: relative;
+  bottom: 3rem;
+}
+main form .input-container div input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid green;
+  padding: 3px;
+  width: 100%;
+  color: white;
+}
+main form .input-container div input::-moz-placeholder {
+  color: white;
+  font-weight: bold;
+  opacity: 0.5;
+}
+main form .input-container div input:-ms-input-placeholder {
+  color: white;
+  font-weight: bold;
+  opacity: 0.5;
+}
+main form .input-container div input::placeholder {
+  color: white;
+  font-weight: bold;
+  opacity: 0.5;
+}
+main form .input-container div i {
+  position: relative;
+  top: 17px;
+  font-size: 1rem;
+  color: white;
+  opacity: 0.5;
+}
+main form button {
+  width: 12rem;
+  height: 4rem;
+  border: 1px solid red;
+  border-radius: 15px;
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+main form button:hover {
+  opacity: 0.8;
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+main form button:active {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#email {
+  font-family: "FontAwesome";
+  padding-left: 30px;
+}
+
+#pw {
+  font-family: "FontAwesome";
+  padding-left: 30px;
+}/*# sourceMappingURL=main.css.map */
