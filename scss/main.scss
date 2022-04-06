@@ -39,14 +39,14 @@ nav {
             font-size: 5rem;
         }
         @include s8 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             position: relative;
-            right: 1.5rem;
+            left: 10px;
+            
         }
         @include iphone12 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             position: relative;
-            right: 1.5rem;
         }
         li {
             padding: 1rem;
@@ -55,6 +55,12 @@ nav {
             a {
                 text-decoration: none;
                 color: red;
+                @include s8 {
+                    font-size: 1.5rem;
+                }
+                @include iphone12 {
+                    font-size: 1.5rem;
+                }
             }
             a:hover {
                 background-color: red;
@@ -66,6 +72,13 @@ nav {
                 display: inline-block;
                 span {
                     color: red;
+                    @include s8 {
+                        font-size: 1.5rem;
+                    }
+                    @include iphone12 {
+                        font-size: 1.5rem;
+                    }
+
                 }
                 span:hover {
                     background-color: red;
@@ -97,22 +110,25 @@ nav {
         background-color: red;
         color: white;
         position: relative;
-        top: 1rem;
-        left: 0.2rem;
+        top: 0.5rem;
+        margin-left: 20px;
+        // top: 1rem;
         @include button;
         @include s8 {
             font-size: 1.5rem;
-            height: 4rem;
+            height: 2rem;
             width: 8rem;
-            // margin-right: 1rem;
+            margin-right: 10px;
             @include flexBox;
         }
         @include iphone12 {
             font-size: 1.5rem;
-            height: 2rem;
-            width: 6rem;
-            margin-left: 2rem;
+            height: 3rem;
+            width: 7rem;
+            margin-right: 10px;
             @include flexBox;
+            position: relative;
+            left: 0.1rem;
         }
         @include ipadair {
             position: relative;
