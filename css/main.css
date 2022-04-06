@@ -82,7 +82,7 @@ nav ul li a {
 }
 @media (max-width: 360px) {
   nav ul li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 400px) {
@@ -173,9 +173,8 @@ nav button:active {
 }
 @media (max-width: 360px) {
   nav button {
-    font-size: 1.5rem;
-    height: 2rem;
-    width: 8rem;
+    height: 3rem;
+    width: 7rem;
     margin-right: 10px;
     display: flex;
     justify-content: center;
@@ -204,6 +203,11 @@ nav button:active {
 nav button a {
   text-decoration: none;
   color: white;
+}
+@media (max-width: 360px) {
+  nav button a {
+    font-size: 1.2rem;
+  }
 }
 
 .dropdown {
