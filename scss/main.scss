@@ -129,6 +129,9 @@ nav {
             position: relative;
             left: 0.1rem;
         }
+        @include iphonexr {
+            margin-left: 40px;
+        }
         @include ipadair {
             position: relative;
             right: 3rem;
@@ -138,6 +141,9 @@ nav {
             color: white;
             @include s8 {
                 font-size: 1.2rem;
+            }
+            @include iphonexr {
+                font-size: 1.5rem;
             }
         }
     }
@@ -185,6 +191,9 @@ nav {
             text-shadow: #474747 3px 5px 2px, 0px 0px 0px rgba(0,0,0,0);
             text-align: center;
             @include s8 {
+                font-size: 2rem;
+            }
+            @include iphonese {
                 font-size: 2rem;
             }
         }
@@ -397,24 +406,23 @@ footer {
         i:hover {
             transform: scale(1.8);
         }
-    }
-    button {
-        height: 70%;
-        font-size: 1.2vw;
-        margin-right: 1rem;
-        position: sticky;
-        bottom: 0;
-        z-index: 5;
-        background-color: red;
-        @include button;
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 1rem;
-            text-align: center;
+        }
+        button {
+            height: 70%;
+            font-size: 1.2vw;
+            margin-right: 1rem;
+            z-index: 5;
+            background-color: red;
+            @include button;
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+            }
         }
     }
-}    
+   
 // STYLES FOR ABOUT.HTML
 .section-about {
     height: 91vh;
@@ -448,6 +456,12 @@ footer {
             height: 90vh;
             width: 57vw;
         }
+        @include iphonexr {
+            height: 40vh;
+        }
+        @include surffaceduo {
+            height: 45vh;
+        }
         img {
             object-fit: cover;
             width: 100%;
@@ -467,6 +481,12 @@ footer {
         @include desktop {
             width: 25vw;
             height: 90vh;
+        }
+        @include iphonexr {
+            height: 50vh;
+        }
+        @include surffaceduo {
+            height: 45vh;
         }
         h2 {
             padding: 2rem;

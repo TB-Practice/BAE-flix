@@ -194,6 +194,11 @@ nav button:active {
     left: 0.1rem;
   }
 }
+@media (max-width: 414px) {
+  nav button {
+    margin-left: 40px;
+  }
+}
 @media (max-width: 820px) {
   nav button {
     position: relative;
@@ -207,6 +212,11 @@ nav button a {
 @media (max-width: 360px) {
   nav button a {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 414px) {
+  nav button a {
+    font-size: 1.5rem;
   }
 }
 
@@ -264,6 +274,11 @@ nav button a {
   text-align: center;
 }
 @media (max-width: 360px) {
+  .header-container header h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 375px) {
   .header-container header h1 {
     font-size: 2rem;
   }
@@ -530,9 +545,6 @@ footer button {
   height: 70%;
   font-size: 1.2vw;
   margin-right: 1rem;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
   z-index: 5;
   background-color: red;
   cursor: pointer;
@@ -596,6 +608,16 @@ footer button a {
     width: 57vw;
   }
 }
+@media (max-width: 414px) {
+  .section-about .img-container {
+    height: 40vh;
+  }
+}
+@media (max-width: 540px) {
+  .section-about .img-container {
+    height: 45vh;
+  }
+}
 .section-about .img-container img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -616,6 +638,16 @@ footer button a {
   .section-about .content-container {
     width: 25vw;
     height: 90vh;
+  }
+}
+@media (max-width: 414px) {
+  .section-about .content-container {
+    height: 50vh;
+  }
+}
+@media (max-width: 540px) {
+  .section-about .content-container {
+    height: 45vh;
   }
 }
 .section-about .content-container h2 {

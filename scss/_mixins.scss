@@ -67,3 +67,20 @@
        @content;
    }
 }
+
+@mixin iphonese {
+    @media (max-width: $iphonese) {
+       @content;
+   }
+}
+
+@mixin iphonexr {
+    @media (max-width: $iphonexr) {
+        @content;
+    }
+}
+@mixin surffaceduo {
+    @media (max-width: $surffaceduo) {
+        @content;
+    }
+}
