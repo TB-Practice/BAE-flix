@@ -18,7 +18,6 @@ nav {
         color: red;
         @include flexBox;
         text-align: center;
-        height: 6rem;
         font-family: "FontAwesome";
         transition: all 1s;
         @include desktop {
@@ -29,6 +28,9 @@ nav {
             left: 1rem;
             bottom: 1rem;
         }
+        @include s8 {
+            font-size: 1.8rem;
+        }
     }
     ul {
         @include flexBox;
@@ -38,20 +40,12 @@ nav {
         @include desktop {
             font-size: 5rem;
         }
-        @include s8 {
-            font-size: 2rem;
-            position: relative;
-            left: 10px;
-            
-        }
         @include iphone12 {
-            font-size: 2rem;
-            position: relative;
+            font-size: 1.2rem;
         }
         li {
             padding: 1rem;
             list-style-type: none;
-            margin-left: 1rem;
             a {
                 text-decoration: none;
                 color: red;
@@ -59,7 +53,16 @@ nav {
                     font-size: 1.2rem;
                 }
                 @include iphone12 {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
+                }
+                @include ipadair {
+                    font-size: 3rem;
+                }
+                @include surffaceduo {
+                    font-size: 2rem;
+                }
+                @include iphonexr {
+                    font-size: 1.4rem;
                 }
             }
             a:hover {
@@ -78,7 +81,15 @@ nav {
                     @include iphone12 {
                         font-size: 1.5rem;
                     }
-
+                    @include ipadair {
+                        font-size: 3rem;
+                    }
+                    @include surffaceduo {
+                        font-size: 2rem;
+                    }
+                    @include iphonexr {
+                        font-size: 1.4rem;
+                    }
                 }
                 span:hover {
                     background-color: red;
@@ -93,6 +104,11 @@ nav {
                     position: absolute;
                     min-width: 160px;
                     padding: 12px 16px;
+                    }
+                    a {
+                        @include ipadair {
+                            font-size: 2rem;
+                        }
                     }
             }
               
@@ -110,40 +126,43 @@ nav {
         background-color: red;
         color: white;
         position: relative;
-        top: 0.5rem;
-        margin-left: 20px;
-        // top: 1rem;
+        left: 0.1rem;
         @include button;
         @include s8 {
-            height: 3rem;
-            width: 7rem;
-            margin-right: 10px;
+            height: 2rem;
+            width: 5rem;
             @include flexBox;
+            // position: relative;
+            // left: 0.1rem;
         }
         @include iphone12 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             height: 3rem;
-            width: 7rem;
-            margin-right: 10px;
+            width: 6.5rem;
             @include flexBox;
             position: relative;
             left: 0.1rem;
         }
         @include iphonexr {
-            margin-left: 40px;
         }
         @include ipadair {
             position: relative;
             right: 3rem;
         }
+        @include surffaceduo {
+            height: 3.5rem;
+        }
         a {
             text-decoration: none;
             color: white;
             @include s8 {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             @include iphonexr {
                 font-size: 1.5rem;
+            }
+            @include surffaceduo {
+                font-size: 1.7rem;
             }
         }
     }
@@ -230,6 +249,13 @@ nav {
                     height: 3rem;
                     font-size: 1rem;
                 }
+                @include surffaceduo {
+                    height: 3rem;
+                    width: 80%;
+                }
+                @include iphonexr {
+                    font-size: 1.5rem;
+                }
             }
             input:nth-of-type(2) {
                 margin-top: 2rem;
@@ -252,6 +278,10 @@ nav {
                     height: 3rem;
                     width: 8rem;
                     font-size: 1.5rem;
+                }
+                @include surffaceduo {
+                    height: 3rem;
+                    width: 12rem;
                 }
             }
         }
@@ -485,6 +515,12 @@ footer {
         @include surffaceduo {
             height: 45vh;
         }
+        @include responsive {
+            height: 45vh;
+        }
+        @include ipadair {
+            height: 55vh;
+        }
         img {
             object-fit: cover;
             width: 100%;
@@ -510,6 +546,12 @@ footer {
         }
         @include surffaceduo {
             height: 45vh;
+        }
+        @include responsive {
+            height: 45vh;
+        }
+        @include ipadair {
+            height: 35vh;
         }
         h2 {
             padding: 2rem;
@@ -539,6 +581,9 @@ footer {
             }
             @include iphone12 {
                 padding: 0;
+            }
+            @include surffaceduo {
+                font-size: 1rem;
             }
         }
         button {

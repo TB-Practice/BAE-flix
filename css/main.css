@@ -29,7 +29,6 @@ nav .logo {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 6rem;
   font-family: "FontAwesome";
   transition: all 1s;
 }
@@ -45,6 +44,11 @@ nav .logo {
     bottom: 1rem;
   }
 }
+@media (max-width: 360px) {
+  nav .logo {
+    font-size: 1.8rem;
+  }
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -58,23 +62,14 @@ nav ul {
     font-size: 5rem;
   }
 }
-@media (max-width: 360px) {
-  nav ul {
-    font-size: 2rem;
-    position: relative;
-    left: 10px;
-  }
-}
 @media (max-width: 400px) {
   nav ul {
-    font-size: 2rem;
-    position: relative;
+    font-size: 1.2rem;
   }
 }
 nav ul li {
   padding: 1rem;
   list-style-type: none;
-  margin-left: 1rem;
 }
 nav ul li a {
   text-decoration: none;
@@ -87,7 +82,22 @@ nav ul li a {
 }
 @media (max-width: 400px) {
   nav ul li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 820px) {
+  nav ul li a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 540px) {
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  nav ul li a {
+    font-size: 1.4rem;
   }
 }
 nav ul li a:hover {
@@ -122,6 +132,21 @@ nav ul li .dropdown span {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 820px) {
+  nav ul li .dropdown span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 540px) {
+  nav ul li .dropdown span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  nav ul li .dropdown span {
+    font-size: 1.4rem;
+  }
+}
 nav ul li .dropdown span:hover {
   background-color: red;
   color: white;
@@ -146,6 +171,11 @@ nav ul li .dropdown .dropdown-content {
   min-width: 160px;
   padding: 12px 16px;
 }
+@media (max-width: 820px) {
+  nav ul li .dropdown a {
+    font-size: 2rem;
+  }
+}
 nav ul li .dropdown:hover .dropdown-content {
   display: block;
   cursor: pointer;
@@ -157,8 +187,7 @@ nav button {
   background-color: red;
   color: white;
   position: relative;
-  top: 0.5rem;
-  margin-left: 20px;
+  left: 0.1rem;
   cursor: pointer;
   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid red;
@@ -173,9 +202,8 @@ nav button:active {
 }
 @media (max-width: 360px) {
   nav button {
-    height: 3rem;
-    width: 7rem;
-    margin-right: 10px;
+    height: 2rem;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,20 +211,14 @@ nav button:active {
 }
 @media (max-width: 400px) {
   nav button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     height: 3rem;
-    width: 7rem;
-    margin-right: 10px;
+    width: 6.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 0.1rem;
-  }
-}
-@media (max-width: 414px) {
-  nav button {
-    margin-left: 40px;
   }
 }
 @media (max-width: 820px) {
@@ -205,18 +227,28 @@ nav button:active {
     right: 3rem;
   }
 }
+@media (max-width: 540px) {
+  nav button {
+    height: 3.5rem;
+  }
+}
 nav button a {
   text-decoration: none;
   color: white;
 }
 @media (max-width: 360px) {
   nav button a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 414px) {
   nav button a {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 540px) {
+  nav button a {
+    font-size: 1.7rem;
   }
 }
 
@@ -330,6 +362,17 @@ nav button a {
     font-size: 1rem;
   }
 }
+@media (max-width: 540px) {
+  .header-container header form input:nth-of-type(1) {
+    height: 3rem;
+    width: 80%;
+  }
+}
+@media (max-width: 414px) {
+  .header-container header form input:nth-of-type(1) {
+    font-size: 1.5rem;
+  }
+}
 .header-container header form input:nth-of-type(2) {
   margin-top: 2rem;
   height: 5rem;
@@ -367,6 +410,12 @@ nav button a {
     height: 3rem;
     width: 8rem;
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .header-container header form input:nth-of-type(2) {
+    height: 3rem;
+    width: 12rem;
   }
 }
 
@@ -641,6 +690,16 @@ footer button a {
     height: 45vh;
   }
 }
+@media (max-width: 750px) {
+  .section-about .img-container {
+    height: 45vh;
+  }
+}
+@media (max-width: 820px) {
+  .section-about .img-container {
+    height: 55vh;
+  }
+}
 .section-about .img-container img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -671,6 +730,16 @@ footer button a {
 @media (max-width: 540px) {
   .section-about .content-container {
     height: 45vh;
+  }
+}
+@media (max-width: 750px) {
+  .section-about .content-container {
+    height: 45vh;
+  }
+}
+@media (max-width: 820px) {
+  .section-about .content-container {
+    height: 35vh;
   }
 }
 .section-about .content-container h2 {
@@ -711,6 +780,11 @@ footer button a {
 @media (max-width: 400px) {
   .section-about .content-container p {
     padding: 0;
+  }
+}
+@media (max-width: 540px) {
+  .section-about .content-container p {
+    font-size: 1rem;
   }
 }
 .section-about .content-container button {

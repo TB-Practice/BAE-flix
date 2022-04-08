@@ -38,32 +38,38 @@
     }
 }
 
+@mixin ipadair {
+    @media (max-width: $ipadair) {
+       @content;
+   }
+}
+
 @mixin mobile {
     @media (max-width: $mobile) {
         @content;
     }
 }
 
- @mixin s8 {
-     @media (max-width: $s8) {
-         @content;
-     }
- }
-
- @mixin iphone12 {
-     @media (max-width: $iphone12) {
-        @content;
-    }
- }
-
- @mixin responsive {
+@mixin responsive {
     @media (max-width: $responsive) {
        @content;
    }
 }
 
-@mixin ipadair {
-    @media (max-width: $ipadair) {
+@mixin surffaceduo {
+    @media (max-width: $surffaceduo) {
+        @content;
+    }
+}
+
+@mixin iphonexr {
+    @media (max-width: $iphonexr) {
+        @content;
+    }
+}
+
+@mixin iphone12 {
+    @media (max-width: $iphone12) {
        @content;
    }
 }
@@ -74,13 +80,12 @@
    }
 }
 
-@mixin iphonexr {
-    @media (max-width: $iphonexr) {
-        @content;
-    }
-}
-@mixin surffaceduo {
-    @media (max-width: $surffaceduo) {
-        @content;
-    }
-}
+ @mixin s8 {
+     @media (max-width: $s8) {
+         @content;
+     }
+ }
+
+
+
+
