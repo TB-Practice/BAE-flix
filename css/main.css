@@ -343,17 +343,37 @@ nav button a {
     width: 60%;
   }
 }
+@media (max-width: 360px) {
+  .header-container header form input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .header-container header form input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .header-container header form input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .header-container header form input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .header-container header form input:-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .header-container header form input::placeholder {
+    font-size: 1.5rem;
+  }
+}
 .header-container header form input:nth-of-type(1) {
   margin-top: 2rem;
   height: 6rem;
   width: 100%;
-  padding: 1rem;
   font-size: 2rem;
 }
 @media (max-width: 360px) {
   .header-container header form input:nth-of-type(1) {
     height: 3rem;
-    font-size: 1rem;
   }
 }
 @media (max-width: 400px) {
