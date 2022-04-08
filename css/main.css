@@ -538,8 +538,31 @@ footer div i {
   padding: 1rem;
   transition: all 0.5s;
 }
-footer div i:hover {
-  transform: scale(1.8);
+footer div .fa-twitter:hover {
+  transform: scale(1.1);
+  background: #1D9BF0;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid #1D9BF0;
+  border-radius: 15px;
+}
+footer div .fa-instagram:hover {
+  transform: scale(1.1);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid #1f1e1e;
+  border-radius: 15px;
+}
+footer div .fa-facebook:hover {
+  background-color: #4267B2;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid #1D9BF0;
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+footer div .fa-youtube:hover {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 15px;
 }
 footer button {
   height: 70%;
